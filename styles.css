@@ -1,0 +1,361 @@
+body {
+     font-family: sans-serif;
+     margin: 0;
+     padding: 0;
+     line-height: 1.6;
+     color: #333; /* Dark gray text for readability */
+ }
+ 
+ header {
+     background-color: #f8f8f8; /* Light gray background */
+     text-align: center;
+     padding: 2rem 0;
+     border-bottom: 1px solid #eee; /* Subtle bottom border */
+ }
+ 
+ header h1 {
+     margin-bottom: 0.5rem;
+     font-size: 2rem;
+     color: #222; /* Darker heading color */
+ }
+ 
+ nav {
+     text-align: center;
+     margin-top: 1rem;
+ }
+ 
+ nav a {
+     text-decoration: none;
+     color: #007bff; /* Primary blue color for links */
+     margin: 0 1rem;
+     padding: 0.5rem 1rem;
+     border-radius: 4px;
+     transition: background-color 0.3s ease;
+ }
+ 
+ nav a:hover {
+     background-color: #e0f0ff; /* Light blue on hover */
+ }
+ 
+ main {
+     padding: 2rem;
+     max-width: 800px;
+     margin: 0 auto; /* Center main content */
+ }
+ 
+ footer {
+     text-align: center;
+     padding: 2rem 0;
+     background-color: #f8f8f8;
+     border-top: 1px solid #eee; /* Subtle top border */
+     color: #777; /* Light gray footer text */
+ }
+ 
+ footer a {
+     color: #007bff; /* Link color */
+     text-decoration: none; /* Remove underline */
+     margin-left: 10px; /* Add space between copyright and link */
+ }
+ 
+ footer a:hover {
+     text-decoration: underline; /* Add underline on hover */
+ }
+ 
+ /* Responsive adjustments */
+ @media (max-width: 600px) {
+     main {
+         padding: 1rem;
+     }
+ 
+     nav a {
+         margin: 0 0.5rem;
+         padding: 0.3rem 0.6rem;
+     }
+ }
+ 
+/* Dropdown styles */
+.dropdown {
+    position: relative; /* Needed to position the dropdown content */
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 1rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; /* Position it relative to the .dropdown container */
+    background-color: #f9f9f9;
+    min-width: 300px; /* Keep the minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    left: 50%; /* Position the left edge at the center of the container */
+    transform: translateX(-50%); /* Shift it back by half of its width */
+    top: 100%; /* Position it below the button */
+    margin-top: 0.2rem; /* Add a small gap between the button and the dropdown */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #0056b3;
+}
+
+/* --------------------------- Gumroad Follow Form Styles -------------------------------------- */
+
+
+#gumroad-follow-form-embed {
+    margin: 1em 0; /* Add some top and bottom margin */
+    padding: 1em;
+    display: flex; /* Use flexbox for alignment */
+    gap: 0.5rem; /* Space between input and button */
+    align-items: center; /* Vertically align items */
+    border: 1px solid #ccc; /* Optional: Add a subtle border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    background-color: #fff; /* Optional: Light background */
+}
+
+#gumroad-follow-form-embed-input {
+    flex-grow: 1; /* Make the input take up available space */
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #111;
+    border-radius: 3px;
+}
+
+#gumroad-follow-form-embed-button {
+    background-color: #007bff; /* A common primary color */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#gumroad-follow-form-embed-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* ------------------------------------- Iframe Styles ------------------------------------------ */
+
+/* Default styles for the iframe container */
+.iframe-container {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Default styles for the iframe to fill the container */
+.iframe-container iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+/* Specific heights for each iframe container */
+.iframe-container iframe[src*="kurtastarita.github.io/Calorie-Calculator-TDEE/"] {
+  height: 900px; /* Adjust as needed for Calorie Calculator */
+  margin-bottom: 10px;
+}
+
+.iframe-container iframe[src*="kurtastarita.github.io/Macro-Calculator/"] {
+  height: 550px; /* Adjust as needed for Macro Calculator */
+      margin-bottom: 10px;
+}
+
+.iframe-container iframe[src*="kurtastarita.github.io/Protein-Calculator/"] {
+  height: 550px; /* Adjust as needed for Protein Calculator */
+}
+
+.iframe-container iframe[src*="kurtastarita.github.io/One-Rep-Max-Calculator/"] {
+  height: 500px; /* Adjust as needed for 1-Rep Max Calculator */
+}
+
+.iframe-container iframe[src*="kurtastarita.github.io/Advanced-BMI-Calculator/"] {
+  height: 725px; /* Adjust as needed for BMI Calculator */
+}
+
+.iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Workout-Generator/"] {
+  height: 18000px; /* Adjust as needed for Workout Generator */
+}
+
+.iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Meal-Log/"] {
+  height: 1200px; /* Adjust as needed for Meal Log */
+}
+
+.iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Shopping-Log/"] {
+  height: 1200px; /* Adjust as needed for Shopping Log */
+}
+
+.iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Workout-Log/"] {
+  height: 1200px; /* Adjust as needed for Workout Log */
+}
+
+.iframe-container iframe[src*="kurtastarita.github.io/Advanced-Body-Fat-Percentage-Calculator/"] {
+  height: 1400px; /* Adjust as needed for Body Fat Calculator */
+}
+
+.iframe-container iframe[src*="https://us9.list-manage.com/contact-form?u=7296814d35dc763b0f265f514&form_id=33f77d77be23557fbd5b0d35b9b83878"] {
+  height: 1000px; /* Adjust as needed for Body Fat Calculator */
+}
+
+
+/* ----------------------- Responsive adjustments ----------------------------- */
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* Styles for Ultimate Meal Log on small screens */
+  iframe[src*="kurtastarita.github.io/Ultimate-Meal-Log/"] #meal-log .meal-entry {
+    display: block;
+  }
+
+  iframe[src*="kurtastarita.github.io/Ultimate-Meal-Log/"] #meal-log .meal-entry input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  iframe[src*="kurtastarita.github.io/Ultimate-Meal-Log/"] #meal-log .header {
+    display: none;
+  }
+
+  /* Styles for Advanced Body-Fat Calculator on small screens */
+  iframe[src*="kurtastarita.github.io/Advanced-Body-Fat-Percentage-Calculator/"] #body-fat-calculator-container .input-group {
+    display: block; /* Example: Make input groups stack */
+    margin-bottom: 10px;
+  }
+
+  iframe[src*="kurtastarita.github.io/Advanced-Body-Fat-Percentage-Calculator/"] #calculate-button {
+    width: 100%; /* Example: Make button full width */
+  }
+
+  /* Styles for Ultimate Workout Generator on small screens */
+  iframe[src*="kurtastarita.github.io/Ultimate-Workout-Generator/"] .form-control {
+    width: 100%; /* Example: Make form controls full width */
+    margin-bottom: 8px;
+  }
+
+  /* Styles for Ultimate Workout Log on small screens */
+  iframe[src*="kurtastarita.github.io/Ultimate-Workout-Log/"] .exercise-row {
+    display: block; /* Example: Stack workout log rows */
+  }
+
+  iframe[src*="kurtastarita.github.io/Ultimate-Workout-Log/"] .exercise-input {
+    width: 100%; /* Example: Make exercise inputs full width */
+    margin-bottom: 5px;
+  }
+
+  /* Styles for Ultimate Shopping Log on small screens */
+  iframe[src*="kurtastarita.github.io/Ultimate-Shopping-Log/"] .item {
+    display: block; /* Example: Stack shopping list items */
+  }
+
+  iframe[src*="kurtastarita.github.io/Ultimate-Shopping-Log/"] .item-name {
+    width: 100%; /* Example: Make item names full width */
+  }
+
+  /* Styles for Calorie Calculator (TDEE) on small screens */
+  iframe[src*="kurtastarita.github.io/Calorie-Calculator-TDEE/"] .input-field {
+    width: 100%; /* Example */
+    margin-bottom: 10px;
+  }
+
+  /* Styles for MACRO Calculator on small screens */
+  iframe[src*="kurtastarita.github.io/Macro-Calculator/"] .macro-input {
+    width: 100%; /* Example */
+    margin-bottom: 10px;
+  }
+
+  /* Styles for 1-Rep Max Calculator on small screens */
+  iframe[src*="kurtastarita.github.io/One-Rep-Max-Calculator/"] .rm-input {
+    width: 100%; /* Example */
+    margin-bottom: 10px;
+  }
+
+  /* Styles for Protein Calculator on small screens */
+  iframe[src*="kurtastarita.github.io/Protein-Calculator/"] .protein-input {
+    width: 100%; /* Example */
+    margin-bottom: 10px;
+  }
+
+  /* Add styles for any other embedded tools here */
+}
+
+/* ---------------- Contact Form Styling ------------------------- */
+
+#contact-form-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
