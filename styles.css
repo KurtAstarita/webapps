@@ -359,3 +359,44 @@ body {
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
+
+/* --------------- Social Share Botton Style --------------------- */
+
+.social-share {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.social-share h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.social-share ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-share ul li a {
+    display: block;
+}
+
+.social-share ul li a img {
+    width: 32px; /* Adjust size as needed */
+    height: 32px;
+    border-radius: 5px; /* Optional: for rounded icons */
+    opacity: 0.7; /* Optional: to make them slightly less prominent */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-share ul li a img:hover {
+    opacity: 1;
+}
