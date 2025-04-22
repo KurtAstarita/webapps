@@ -443,3 +443,61 @@ body {
 .social-share img:hover {
   transform: scale(1.1);
 }
+
+/* -------------------- Styles for Pop-Up Disclaimer ------------------------ */
+
+.security-warning-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Adjust text alignment as needed */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.security-warning-popup h3 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.security-warning-popup ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.security-warning-popup label {
+  font-weight: normal; /* Reset label font weight if needed */
+}
+
+.security-warning-popup #continue-button {
+  width: auto; /* Adjust width as needed */
+  padding: 10px 15px;
+  background-color: black; /* Use your primary button color */
+  color: white;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.security-warning-popup #continue-button:hover {
+  background-color: darkgray; /* Use your primary button hover color */
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
