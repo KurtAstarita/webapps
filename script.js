@@ -27,24 +27,25 @@ const dropdown = document.querySelector('.dropdown');
 
 <!-- ............................ Pop-up Diclaimer Logic ................................ -->
 
-document.addEventListener('DOMContentLoaded', function() {
-    const warningPopup = document.getElementById('security-warning-popup');
-    const overlay = document.getElementById('popup-overlay');
-    const dontShowAgainCheckbox = document.getElementById('dont-show-again');
-    const continueButton = document.getElementById('continue-button');
+   document.addEventListener('DOMContentLoaded', function() {
+        const dontShowCheckbox = document.getElementById('dont-show-security-tip');
+        const securityTipElement = dontShowCheckbox.closest('p').previousElementSibling; // Adjust selector if needed
 
-    const hasSeenWarning = localStorage.getItem('securityWarningShown');
+        const hasDismissedSecurityTip = localStorage.getItem('dismissedSecurityTip');
+        if (hasDismissedSecurityTip === 'true') {
+            securityTipElement.style.display = 'none';
+            dontShowCheckbox.closest('p').style.display = 'none';
+        }
 
-    if (!hasSeenWarning) {
-      warningPopup.style.display = 'block';
-      overlay.style.display = 'block';
-    }
-
-    continueButton.addEventListener('click', function() {
-      warningPopup.style.display = 'none';
-      overlay.style.display = 'none';
-      if (dontShowAgainCheckbox.checked) {
-        localStorage.setItem('securityWarningShown', 'true');
-      }
+        dontShowCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                localStorage.setItem('dismissedSecurityTip', 'true');
+                securityTipElement.style.display = 'none';
+                this.closest('p').style.display = 'none';
+            } else {
+                localStorage.removeItem('dismissedSecurityTip');
+                securityTipElement.style.display = 'block';
+                this.closest('p').style.display = 'block';
+            }
+        });
     });
-  });
