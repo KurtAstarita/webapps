@@ -27,25 +27,26 @@ const dropdown = document.querySelector('.dropdown');
 
 <!-- ............................ Pop-up Diclaimer Logic ................................ -->
 
-   document.addEventListener('DOMContentLoaded', function() {
-        const dontShowCheckbox = document.getElementById('dont-show-security-tip');
-        const securityTipElement = dontShowCheckbox.closest('p').previousElementSibling; // Adjust selector if needed
+const dontShowCheckbox = document.getElementById('dont-show-again');
+if (dontShowCheckbox) {
+    const securityWarningPopup = document.getElementById('security-warning-popup');
+    const popupOverlay = document.getElementById('popup-overlay');
+    const continueButton = document.getElementById('continue-button');
+    const hasDismissedWarning = localStorage.getItem('dismissedSecurityWarning');
 
-        const hasDismissedSecurityTip = localStorage.getItem('dismissedSecurityTip');
-        if (hasDismissedSecurityTip === 'true') {
-            securityTipElement.style.display = 'none';
-            dontShowCheckbox.closest('p').style.display = 'none';
+    if (hasDismissedWarning === 'true') {
+        if (securityWarningPopup) securityWarningPopup.style.display = 'none';
+        if (popupOverlay) popupOverlay.style.display = 'none';
+    } else {
+        if (securityWarningPopup) securityWarningPopup.style.display = 'block';
+        if (popupOverlay) popupOverlay.style.display = 'block';
+    }
+
+    continueButton.addEventListener('click', () => {
+        if (securityWarningPopup) securityWarningPopup.style.display = 'none';
+        if (popupOverlay) popupOverlay.style.display = 'none';
+        if (dontShowCheckbox.checked) {
+            localStorage.setItem('dismissedSecurityWarning', 'true');
         }
-
-        dontShowCheckbox.addEventListener('change', function() {
-            if (this.checked) {
-                localStorage.setItem('dismissedSecurityTip', 'true');
-                securityTipElement.style.display = 'none';
-                this.closest('p').style.display = 'none';
-            } else {
-                localStorage.removeItem('dismissedSecurityTip');
-                securityTipElement.style.display = 'block';
-                this.closest('p').style.display = 'block';
-            }
-        });
     });
+}
