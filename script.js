@@ -24,3 +24,27 @@ const dropdown = document.querySelector('.dropdown');
       dropdownContent.style.display = 'none';
     }, 200); // Adjust the delay here as well if needed
   });
+
+<!-- ............................ Pop-up Diclaimer Logic ................................ -->
+
+document.addEventListener('DOMContentLoaded', function() {
+    const warningPopup = document.getElementById('security-warning-popup');
+    const overlay = document.getElementById('popup-overlay');
+    const dontShowAgainCheckbox = document.getElementById('dont-show-again');
+    const continueButton = document.getElementById('continue-button');
+
+    const hasSeenWarning = localStorage.getItem('securityWarningShown');
+
+    if (!hasSeenWarning) {
+      warningPopup.style.display = 'block';
+      overlay.style.display = 'block';
+    }
+
+    continueButton.addEventListener('click', function() {
+      warningPopup.style.display = 'none';
+      overlay.style.display = 'none';
+      if (dontShowAgainCheckbox.checked) {
+        localStorage.setItem('securityWarningShown', 'true');
+      }
+    });
+  });
