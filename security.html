@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Information - [Your Tool Name(s)]</title>
+  <link rel="stylesheet" href="styles.css"> </head>
+<body>
+  <div class="security-page-container">
+    <h1>Security Information for [Your Tool Name(s)]</h1>
+
+    <section>
+      <h2>Our Built-In Security Measures</h2>
+      <p>We are committed to providing you with tools that prioritize security. Here are the measures we've implemented:</p>
+      <ul>
+        <li>
+          <strong>Content Security Policy (CSP):</strong> A strict CSP is in place to control the resources your browser is allowed to load while using our tools. This helps prevent Cross-Site Scripting (XSS) attacks by limiting the origins of scripts, styles, images, and other assets to trusted sources, including our own domain and reputable CDNs with Subresource Integrity (SRI).
+        </li>
+        <li>
+          <strong>Input Sanitization with DOMPurify:</strong> Any text input areas within our tools utilize the DOMPurify library. This robust sanitization process removes potentially malicious HTML and JavaScript code from the text you paste before it's processed or displayed. This is a critical defense against XSS vulnerabilities arising from user input.
+        </li>
+        <li>
+          <strong>Subresource Integrity (SRI):</strong> When loading external JavaScript libraries from CDNs (like jsPDF and DOMPurify), we use SRI hashes. This ensures that your browser verifies the integrity of these files against a known, trusted hash. If the file has been tampered with, your browser will refuse to execute it, protecting you from compromised CDNs.
+        </li>
+        <li>
+          <strong>Client-Side Operation:</strong> Our tools operate primarily within your web browser. This means that your data is generally processed and stored locally within your browser's storage (e.g., Local Storage). This architecture reduces the risk of data exposure through a central server.
+        </li>
+        <li>
+          <strong>Social Sharing Link Protection:</strong> Social sharing links integrated into our tools use the `rel="noopener noreferrer"` attribute. This prevents a type of attack known as tabnabbing, where a linked page could potentially gain control of your original tab.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Potential Drawbacks and Limitations</h2>
+      <p>While we have implemented significant security measures, it's important to be aware of potential limitations:</p>
+      <ul>
+        <li>
+          <strong>Reliance on Client-Side Security:</strong> As our tools are primarily client-side, the ultimate security of your experience also depends on the security of your own web browser and computer. Keeping your browser and operating system up to date with the latest security patches is crucial.
+        </li>
+        <li>
+          <strong>Local Storage Security:</strong> Data stored in your browser's Local Storage, while convenient, can be accessed by other scripts running on the same domain. While our tools sanitize data before use, it's important to be mindful of the overall security of websites you visit.
+        </li>
+        <li>
+          <strong>Complexity of Web Security:</strong> The landscape of web security threats is constantly evolving. While we strive to stay up-to-date with best practices, new vulnerabilities can emerge.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Enhancing Your Security with Privacy-Focused Browsers and Extensions</h2>
+      <p>To further bolster your security and privacy while using our tools and browsing the web in general, we highly recommend considering:</p>
+      <ul>
+        <li>
+          <strong>Brave Browser:</strong> Brave is a web browser with built-in privacy features that go beyond the defaults of many other browsers. This includes aggressive blocking of trackers, third-party cookies, and potentially malicious ads (malvertising). Its script blocking and HTTPS Everywhere features also contribute to a more secure browsing experience.
+        </li>
+        <li>
+          <strong>DuckDuckGo Privacy Essentials (Browser Extension):</strong> If you prefer to use other browsers like Chrome, Firefox, or Safari, the DuckDuckGo Privacy Essentials extension provides significant privacy and security enhancements. It blocks trackers, upgrades connections to HTTPS where available, and provides a privacy grade for websites you visit, helping you make informed decisions about the sites you interact with.
+        </li>
+      </ul>
+      <p>Using these tools in conjunction with our built-in security measures can create a more robust defense against various web-based threats.</p>
+    </section>
+
+    <section>
+      <h2>Implications of Pasting Text into the Tools</h2>
+      <p>Our tools allow you to paste text (e.g., workout routines) for processing. While we use DOMPurify to sanitize this input, it's crucial to understand the implications:</p>
+      <ul>
+        <li>
+          <strong>Potential for Hidden Malicious Code:</strong> Even though DOMPurify is highly effective at removing known malicious HTML and JavaScript, sophisticated attacks might attempt to use obscure or novel methods. Exercising caution and only pasting text from sources you trust is paramount.
+        </li>
+        <li>
+          <strong>Information Disclosure (If Unintentional):</strong> Be mindful of the content you are pasting. Avoid pasting sensitive personal information that is not necessary for the tool's function.
+        </li>
+        <li>
+          <strong>Limitations of Client-Side Sanitization:</strong> While DOMPurify operates on your browser, it cannot prevent you from intentionally pasting harmful content and potentially affecting your own local environment or other browser interactions.
+        </li>
+      </ul>
+      <p>By being aware of these implications and practicing safe browsing habits, you can further minimize potential risks when using our tools.</p>
+    </section>
+
+    <p>We are continuously working to improve the security and reliability of our tools. If you have any security concerns or discover potential vulnerabilities, please do not hesitate to contact us.</p>
+  </div>
+</body>
+</html>
