@@ -451,6 +451,8 @@ body {
 
 /* -------------------- Styles for Pop-Up Disclaimer ------------------------ */
 
+/* -------------------- Styles for Pop-Up Disclaimer ------------------------ */
+
 .security-warning-popup {
   display: none;
   position: fixed;
@@ -464,6 +466,8 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left; /* Adjust text alignment as needed */
   border-radius: 5px; /* Optional: Rounded corners */
+  max-width: 90%; /* Limit width to 90% of the viewport */
+  width: 600px; /* Or a fixed width that looks good on most screens */
 }
 
 .security-warning-popup h3 {
@@ -479,17 +483,24 @@ body {
 
 .security-warning-popup label {
   font-weight: normal; /* Reset label font weight if needed */
+  display: block; /* Ensure checkbox and text wrap properly */
+  margin-bottom: 15px; /* Add more space below the checkbox */
 }
 
 .security-warning-popup #continue-button {
   width: auto; /* Adjust width as needed */
-  padding: 10px 15px;
+  padding: 10px 20px;
   background-color: black; /* Use your primary button color */
   color: white;
   cursor: pointer;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
+  display: block; /* Make it a block-level element to take full width if needed */
+  margin-top: 15px; /* Add some space above the button */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Center the button text */
 }
 
 .security-warning-popup #continue-button:hover {
