@@ -24,29 +24,3 @@ const dropdown = document.querySelector('.dropdown');
       dropdownContent.style.display = 'none';
     }, 200); // Adjust the delay here as well if needed
   });
-
-<!-- ............................ Pop-up Diclaimer Logic ................................ -->
-
-const dontShowCheckbox = document.getElementById('dont-show-again');
-if (dontShowCheckbox) {
-    const securityWarningPopup = document.getElementById('security-warning-popup');
-    const popupOverlay = document.getElementById('popup-overlay');
-    const continueButton = document.getElementById('continue-button');
-    const hasDismissedWarning = localStorage.getItem('dismissedSecurityWarning');
-
-    if (hasDismissedWarning === 'true') {
-        if (securityWarningPopup) securityWarningPopup.style.display = 'none';
-        if (popupOverlay) popupOverlay.style.display = 'none';
-    } else {
-        if (securityWarningPopup) securityWarningPopup.style.display = 'block';
-        if (popupOverlay) popupOverlay.style.display = 'block';
-    }
-
-    continueButton.addEventListener('click', () => {
-        if (securityWarningPopup) securityWarningPopup.style.display = 'none';
-        if (popupOverlay) popupOverlay.style.display = 'none';
-        if (dontShowCheckbox.checked) {
-            localStorage.setItem('dismissedSecurityWarning', 'true');
-        }
-    });
-}
