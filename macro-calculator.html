@@ -3,22 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calorie Calculator - My Fitness Tools Hub</title>
-    <meta name="description" content="Estimate your daily calorie needs based on your activity level, age, gender, weight, and height with our easy-to-use calorie calculator. Part of the My Fitness Tools Hub.">
-    <meta name="keywords" content="calorie calculator, daily calories, calorie needs, BMR, TDEE, nutrition, weight loss, weight gain, fitness tools, diet, metabolism">
-    <meta property="og:title" content="Calorie Calculator - Find Your Daily Calorie Needs | My Fitness Tools Hub">
-    <meta property="og:description" content="Estimate your daily calorie needs based on your activity level, age, gender, weight, and height with our easy-to-use calorie calculator. Part of the My Fitness Tools Hub.">
-    <meta property="og:url" content="https://kurtastarita.github.io/post40gains-fitness-tools/calorie-calculator.html">
-    <meta property="og:image" content="https://kurtastarita.github.io/post40gains-fitness-tools/images/calorie-calculator-1.png">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="POST40GAINS - FITNESS TOOLS HUB">
-    <meta property="og:locale" content="en_US">
+    <title>Macro Calculator - My Fitness Tools Hub</title>
     <link rel="stylesheet" href="styles.css">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdnjs.cloudflare.com; style-src 'self'; frame-src 'self' kurtastarita.github.io; object-src 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdnjs.cloudflare.com; style-src 'self'; img-src 'self' data:; font-src 'self'; object-src 'none';">
 </head>
 <body>
     <header>
-        <h1>POST40GAINS - FITNESS TOOLS HUB</h1>
+      <h1>POST40GAINS - FITNESS TOOLS HUB</h1>
         <h3>By Kurt Astarita</h3>
         <p>A collection of powerful fitness tools to help you achieve your goals.</p>
         <nav>
@@ -38,45 +29,74 @@
                     <a href="ultimate-workout-log.html">Ultimate Workout Log</a>
                     <a href="ultimate-meal-log.html">Ultimate Meal Log</a>
                     <a href="ultimate-shopping-log.html">Ultimate Shopping Log</a>
-                    </div>
+              </div>
             </div>
         </nav>
     </header>
     <main>
-        <h1>Calorie Calculator (TDEE)</h1>
+        <h1>Macro Calulator</h1>
 
-<!-- ................... Iframe ......................... -->
-        
+<!-- ...................  Pop-up Disclaimer ......................... _-->
+
+<div id="security-warning-popup" class="security-warning-popup">
+    <h3>Important Security & Privacy Notice</h3>
+    <p class="warning-text">
+        For enhanced security and privacy while using these tools, we strongly recommend using a privacy-focused browser like <strong>Brave</strong>, or installing the <strong>DuckDuckGo Privacy Essentials</strong> browser extension (for other browsers).
+    </p>
+    <p>These tools help protect you by:</p>
+    <ul>
+        <li>Blocking trackers and third-party cookies.</li>
+        <li>Preventing malicious ads (malvertising).</li>
+        <li>Potentially offering stronger default security settings.</li>
+    </ul>
+    <label>
+        <input type="checkbox" id="dont-show-again"> Don't show this message again.
+    </label>
+    <br><br>
+    <button id="continue-button">Continue to Tools</button>
+</div>
+
+<div id="popup-overlay" class="popup-overlay"></div>
+
+<!-- .............. Iframe ................. -->        
+
 <div class="calculator">
   <div class="iframe-container">
     <iframe
-      src="https://kurtastarita.github.io/Calorie-Calculator-TDEE/"
+      src="https://kurtastarita.github.io/Macro-Calculator/"
       allowfullscreen
     ></iframe>
   </div>
 </div>
 
-<!-- .................... Body Content ......................... -->
-
-<h2>Easily Calculate Calories Like A Boss!</h2>
+<!-- .............. Page Content ................. -->   
         
-  <p>This Calorie Calculator (TDEE) is your go-to guide to your body's energy needs! It will help you estimate your Total Daily Energy Expenditure (TDEE) – calories burned daily – based on your own measurements and activity level. Whether you need to maintain, lose, or gain weight, this calculator will provide you with a personalized calorie goal to help you reach your goals!</p>
+   <h2>Unlock Your Nutrition with This Macro Calculator!</h2>
 
-  <h3>Here's the scoop:</h3>
-  <ul>
-    <li><strong>Easy Input:</strong> Simply enter your age, gender, height in cm or inches, and weight in kg or lbs.</li>
-    <li><strong>Activity Level Selection:</strong> Select one of the activity levels, from sedentary to extra active, to reasonably reflect your movement during the day.</li>
-    <li><strong>Goal Selection:</strong> Select your primary goal: maintain your weight as it is currently, lose weight (by lowering your daily calorie intake), or gain weight (by raising your daily calorie intake).</li>
-    <li><strong>Smart Calculation:</strong> Press the "Calculate Calories" button and the calculator uses tried and tested formulas to approximate your Basal Metabolic Rate (BMR) and then multiplies it by your activity factor to estimate your TDEE.</li>
-    <li><strong>Personalized Results:</strong> You will be presented with an estimated TDEE and a recommended daily calorie intake tailored directly to your target.</li>
-  </ul>
+    <p>This Macro Calculator is your key to gaining knowledge about, as well as fine-tuning, your macronutrient consumption! If you know your overall daily calorie requirement, this calculator can then proportion those calories into the desired levels of protein, carbohydrates, and fats based on the percentages chosen. This is essential in reaching a certain goal of fitness, be it gaining muscle, losing body fat, maximizing performance, etc!</p>
 
-  <p>Consider this your own nutrition compass, guiding you in the direction of the right calorie intake to fuel your fitness journey and guide you to the body you're working towards!</p>
+    <p>This is how it works to individualize your diet:</p>
 
-  <p>How's that sound, bro? Ready to crunch those calories and fuel your progress?</p>
+    <ul>
+        <li>
+            <strong>Basic Calorie Intake:</strong> Simply enter your daily calorie goal.
+        </li>
+        <li>
+            <strong>Percentage Allocation:</strong> State the proportion of your calorie intake each day that you will get from protein, carbohydrates, and fats.
+        </li>
+        <li>
+            Click the <strong>"Calculate Macros"</strong> button, and the calculator will compute the math for you, converting those percentages into the actual grams of each macronutrient you want to aim for.
+        </li>
+        <li>
+            <strong>Clear Results:</strong> You will receive a calculation of your target grams of protein, carbohydrates, and fats, making meal planning and tracking simple.
+        </li>
+    </ul>
 
+    <p>Think of this as your own personal macro strategist, helping you take control of your diet and ensuring you're giving your body the right ratios to achieve your goal!</p>
 
-<!-- ................. End of Body Content ...................... -->
+    <p>What's your take on this, man? Ready to destroy those macros and tweak that diet?</p>
+
+<!-- ...................... End of Page Content ........................... -->
 
    <div class="social-share">
     <h3>Share This Tool:</h3>
@@ -112,6 +132,6 @@
     <footer>
     <p>&copy; [2025] Kurt Astarita | <a href="disclaimers.html">Disclaimers</a></p>
     </footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
