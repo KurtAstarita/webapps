@@ -195,7 +195,7 @@ body {
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Protein-Calculator/"] {
-  height: 550px; /* Adjust as needed for Protein Calculator */
+  height: 600px; /* Adjust as needed for Protein Calculator */
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/One-Rep-Max-Calculator/"] {
@@ -203,7 +203,7 @@ body {
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Advanced-BMI-Calculator/"] {
-  height: 725px; /* Adjust as needed for BMI Calculator */
+  height: 775px; /* Adjust as needed for BMI Calculator */
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Workout-Generator/"] {
