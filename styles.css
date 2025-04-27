@@ -199,7 +199,7 @@ body {
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/One-Rep-Max-Calculator/"] {
-  height: 500px; /* Adjust as needed for 1-Rep Max Calculator */
+  height: 550px; /* Adjust as needed for 1-Rep Max Calculator */
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Advanced-BMI-Calculator/"] {
