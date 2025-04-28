@@ -212,7 +212,7 @@ body {
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Workout-Generator/"] {
-  height: 31000px; /* Adjust as needed for Workout Generator */
+  height: 32000px; /* Adjust as needed for Workout Generator */
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Meal-Log/"] {
