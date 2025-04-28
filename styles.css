@@ -3,6 +3,11 @@ img {
   height: auto;
 }
 
+.tally-embed {
+    border: none;
+    width: 100%; /* It's generally a good idea to set the width in CSS */
+}
+
 body {
      font-family: sans-serif;
      margin: 0;
