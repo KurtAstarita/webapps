@@ -34,7 +34,7 @@ window.addEventListener('message', function(event) {
     // if (event.origin !== 'https://kurtastarita.github.io') return;
 
     if (event.data && event.data.height) {
-        const iframe = document.getElementById('yourIframeId');
+        const iframe = document.getElementById('myWorkoutLogIframe');
         if (iframe) {
             iframe.style.height = event.data.height + 'px';
         }
