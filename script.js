@@ -42,7 +42,7 @@ window.addEventListener('message', function(event) {
 });
 
 window.onload = function() {
-    const iframe = document.getElementById('yourIframeId');
+    const iframe = document.getElementById('myWorkoutLogIframe');
     if (iframe) {
         iframe.src = 'https://post40gains-fitness-tools.kurtastarita.com/ultimate-workout-log'; // Set the iframe source after the listener is set up
     }
