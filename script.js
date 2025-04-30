@@ -34,7 +34,7 @@ function sendHeightToParent() {
         document.body.offsetHeight,
         document.documentElement.offsetHeight
     );
-    window.parent.postMessage({ height: contentHeight }, 'https://kurtastarita.github.io/Ultimate-Workout-Log/'); // Replace '*' with your parent's origin for security
+    window.parent.postMessage({ height: contentHeight }, 'https://kurtastarita.github.io'); // Replace '*' with your parent's origin for security
 }
 
 // Call sendHeightToParent whenever the content height changes
