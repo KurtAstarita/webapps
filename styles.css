@@ -227,7 +227,7 @@ body {
   display: block;
   width: 100%;
   border: none;
-  /* Remove the specific height for the workout log */
+  height: 100px;
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Advanced-Body-Fat-Percentage-Calculator/"] {
