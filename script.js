@@ -24,3 +24,23 @@ const dropdown = document.querySelector('.dropdown');
       dropdownContent.style.display = 'none';
     }, 200); // Adjust the delay here as well if needed
   });
+
+<!-- .............................................................. -->
+
+function sendHeightToParent() {
+    const contentHeight = Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight
+    );
+    window.parent.postMessage({ height: contentHeight }, 'https://kurtastarita.github.io/Ultimate-Workout-Log/'); // Replace '*' with your parent's origin for security
+}
+
+// Call sendHeightToParent whenever the content height changes
+window.onload = sendHeightToParent;
+window.addEventListener('resize', sendHeightToParent);
+// Example: After workout generation
+// document.getElementById('generateButton').addEventListener('click', function() {
+//     setTimeout(sendHeightToParent, 500);
+// });
