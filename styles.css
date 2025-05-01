@@ -1,3 +1,13 @@
+header h1 {
+    display: flex; /* To easily align items within the h1 */
+    align-items: center; /* Vertically align the logo and text */
+}
+
+.logo-in-title {
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
 img {
   max-width: 100%;
   height: auto;
