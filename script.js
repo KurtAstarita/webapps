@@ -44,6 +44,6 @@ window.addEventListener('message', function(event) {
 window.onload = function() {
     const iframe = document.getElementById('myWorkoutLogIframe');
     if (iframe) {
-        iframe.src = 'https://kurtastarita.github.io/Ultimate-Workout-Log/'; // Set the iframe source after the listener is set up
+        iframe.src = 'https://ultimate-workout-log.kurtastarita.com'; // Set the iframe source after the listener is set up
     }
 };
