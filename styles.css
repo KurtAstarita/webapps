@@ -1,11 +1,28 @@
+header {
+    background-color: #f8f8f8; /* Light gray background */
+    text-align: center; /* Center the content within the header */
+    padding: 2rem 0;
+    border-bottom: 1px solid #eee; /* Subtle bottom border */
+    display: flex; /* Add flexbox to the header */
+    flex-direction: column; /* Stack the h1 and p vertically */
+    align-items: center; /* Center items horizontally in the flex container */
+}
+
 header h1 {
     display: flex; /* To easily align items within the h1 */
     align-items: center; /* Vertically align the logo and text */
+    margin-bottom: 0.5rem; /* Keep the existing margin */
+    font-size: 2rem; /* Keep the existing font size */
+    color: #222; /* Keep the existing color */
 }
 
-.logo-in-title {
+header h1 img.logo-in-title {
     height: 30px; /* Adjust the height as needed */
     margin-right: 10px; /* Add some spacing between the logo and text */
+}
+
+header p {
+    text-align: center; /* Ensure the paragraph text is also centered */
 }
 
 img {
