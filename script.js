@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show or hide the button based on scroll position
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 1000) {
+        if (window.scrollY > 200) {
             backToTopBtn.style.display = "block";
         } else {
             backToTopBtn.style.display = "none";
