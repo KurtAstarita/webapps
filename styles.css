@@ -224,9 +224,7 @@ body {
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Workout-Log/"] {
-  display: block;
-  width: 100%;
-  border: none;
+  height: 1200px; /* Adjust as needed for Workout Log */
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Advanced-Body-Fat-Percentage-Calculator/"] {
