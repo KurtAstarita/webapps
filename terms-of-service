@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "My Fitness Tools Hub",
+  "url": "https://kurtastarita.github.io/post40gains-fitness-tools/",
+  "description": "A collection of useful fitness tools including a workout generator, calorie calculator, and more to help you achieve your health and wellness goals.",
+  "creator": {
+    "@type": "Person",
+    "name": "Kurt Astarita",
+    "url": "https://profile.kurtastarita.com/"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://kurtastarita.github.io/post40gains-fitness-tools/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+},
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "My Fitness Tools Hub",
+  "url": "https://kurtastarita.github.io/post40gains-fitness-tools/",
+  "description": "A collection of useful fitness tools including a workout generator, calorie calculator, and more to help you achieve your health and wellness goals.",
+  "primaryImageOfPage": {
+    "@type": "ImageObject",
+    "url": "https://kerryathompson.com/blog/how-to-pick-the-best-banner-image-for-your-home-page"
+  },
+  "isPartOf": {
+    "@id": "https://kurtastarita.github.io/post40gains-fitness-tools/"
+  }
+}
+</script>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDFFSCK9J6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RDFFSCK9J6');
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fitness Tools Hub</title>
+    <meta name="description" content="A collection of useful fitness tools including a workout generator, calorie calculator, and more to help you achieve your health and wellness goals.">
+    <meta name="keywords" content="fitness, workout, generator, calorie, calculator, exercise, health, wellness, training, strength, cardio">
+    <meta name="author" content="Your Name or Organization Name">
+    <meta property="og:title" content="My Fitness Tools Hub">
+    <meta property="og:description" content="A collection of useful fitness tools including a workout generator, calorie calculator, and more to help you achieve your health and wellness goals.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="[Your Website URL]">
+    <meta property="og:image" content="https://kerryathompson.com/blog/how-to-pick-the-best-banner-image-for-your-home-page">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="en-US">
+    <link rel="canonical" href="[Your Website URL]">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdnjs.cloudflare.com https://www.googletagmanager.com; style-src 'self'; frame-src 'self' ultimate-workout-log.kurtastarita.com; object-src 'none'">
+</head>
+<body>
+    <header>
+        <h1>POST40GAINS - FITNESS TOOLS HUB</h1>
+        <p>A collection of powerful fitness tools to help you achieve your goals.</p>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About Me</a>
+            <a href="/contact">Contact Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tools</button>
+                <div class="dropdown-content">
+                    <a href="/calorie-calculator">Calorie Calculator (TDEE)</a>
+                    <a href="/macro-calculator">MACRO Calculator</a>
+                    <a href="/protein-calculator">Protein Calculator</a>
+                    <a href="/one-rep-max-calculator">1-Rep Max Calculator</a>
+                    <a href="/advanced-bmi-calculator">Advanced BMI Calculator</a>
+                    <a href="/advanced-body-fat-calculator">Advanced Body-Fat Calculator</a>
+                    <a href="/ultimate-workout-generator">Ultimaite Workout Generator</a>
+                    <a href="/ultimate-workout-log">Ultimate Workout Log</a>
+                    <a href="/ultimate-meal-log">Ultimate Meal Log</a>
+                    <a href="/ultimate-shopping-log">Ultimate Shopping Log</a>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+<!-- .................... Page Content ......................... -->
+
+    <h1>Terms of Service for Our Fitness and Other Tools</h1>
+
+    <p><strong>Last Updated:</strong> [Date of Last Update - Please Insert Date]</p>
+
+    <p>Please read these Terms of Service ("Terms") carefully before accessing or using our suite of fitness and other tools (the "Tools") and our website. By accessing or using the Tools or our website, whether directly or through embedding, you ("you" or "User") agree to be bound by these Terms. If you do not agree to all of these Terms, do not access or use the Tools or our website.</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>These Terms constitute a legally binding agreement between you and [Your Name/Website Name] ("we," "us," or "our"). Your use of the Tools and our website signifies your acceptance of these Terms and our <a href="[Link to Your Privacy Policy]">Privacy Policy</a>, which is incorporated herein by reference.</p>
+
+    <h2>2. Description of Tools</h2>
+    <p>Our Tools encompass a variety of fitness and other resources, including but not limited to calculators, generators, and logs, designed to assist users with various tasks. The specific functionalities of each Tool are described on the respective pages of our website.</p>
+
+    <h2>3. User Responsibilities</h2>
+    <p>When using our Tools, you agree to:</p>
+    <ul>
+        <li>Provide accurate and truthful information when required by a Tool.</li>
+        <li>Use the Tools for lawful purposes only and in a manner that does not infringe upon the rights of others or restrict or inhibit their use and enjoyment of the Tools or our website.</li>
+        <li>Not attempt to interfere with the proper functioning of the Tools or our website, including but not limited to introducing viruses, malware, or other harmful code.</li>
+        <li>Acknowledge that the results and outputs provided by the Tools are for informational and personal use only and should not be considered professional advice. You should consult with qualified professionals for specific guidance related to fitness, health, finance, or other areas where our Tools provide information.</li>
+    </ul>
+
+    <h2>4. Embedding Our Tools</h2>
+    <p>We permit third-party websites to embed our Tools using the provided iframe code. If you choose to embed our Tools on your website, you agree to the following:</p>
+    <ul>
+        <li>You are responsible for ensuring that the embedding of our Tools complies with all applicable laws and regulations and the terms and conditions of your website.</li>
+        <li>You must not modify the Tools in any way that alters their functionality, appearance, or branding without our express written consent.</li>
+        <li>You must provide a clear attribution to our website (e.g., a link back to our Tool's original page).</li>
+        <li>We reserve the right to revoke permission to embed our Tools at any time and for any reason, and you agree to promptly remove the embedded Tools upon our request.</li>
+        <li>We are not responsible for the content, operation, or privacy practices of your website where our Tools are embedded.</li>
+        <li>You agree to indemnify and hold us harmless from any claims, damages, or losses arising out of your embedding or use of our Tools on your website.</li>
+    </ul>
+
+    <h2>5. Intellectual Property Rights</h2>
+    <p>All rights, title, and interest in and to the Tools and our website, including but not limited to the design, code, text, graphics, and logos, are and will remain the exclusive property of [Your Name/Website Name] and are protected by applicable copyright, trademark, and other intellectual property laws. You are granted a non-exclusive, non-transferable, revocable license to use the Tools for your personal, non-commercial use.</p>
+    <p>You may not reproduce, modify, distribute, display, perform, or create derivative works of any part of the Tools or our website without our prior written consent.</p>
+
+    <h2>6. Disclaimer of Warranties</h2>
+    <p>THE TOOLS AND OUR WEBSITE ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT ANY WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ANY WARRANTIES ARISING OUT OF COURSE OF DEALING OR USAGE OF TRADE. WE DO NOT WARRANT THAT THE TOOLS OR OUR WEBSITE WILL BE UNINTERRUPTED, ERROR-FREE, SECURE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.</p>
+    <p>WE MAKE NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY, COMPLETENESS, RELIABILITY, OR TIMELINESS OF THE CONTENT OR OUTPUT PROVIDED BY THE TOOLS.</p>
+
+    <h2>7. Limitation of Liability</h2>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL [Your Name/Website Name] BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES) ARISING OUT OF OR RELATING TO YOUR ACCESS TO OR USE OF, OR YOUR INABILITY TO ACCESS OR USE, THE TOOLS OR OUR WEBSITE, WHETHER BASED ON WARRANTY, CONTRACT, TORT (INCLUDING NEGLIGENCE), STATUTE, OR ANY OTHER LEGAL THEORY, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+    <p>OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR YOUR USE OF THE TOOLS OR OUR WEBSITE SHALL NOT EXCEED [Specify a nominal amount, e.g., $1.00].</p>
+
+    <h2>8. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless [Your Name/Website Name] and our affiliates, officers, directors, employees, agents, and licensors from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising out of or relating to (a) your use of the Tools or our website, (b) your violation of these Terms, (c) your embedding of our Tools on your website, or (d) your violation of any third-party rights.</p>
+
+    <h2>9. Governing Law and Dispute Resolution</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of [Your State/Jurisdiction], without regard to its conflict of law provisions. Any legal action or proceeding arising out of or relating to these Terms or the Tools or our website shall be brought exclusively in the state or federal courts located in [Your City/Jurisdiction], and you hereby consent to the personal jurisdiction of such courts.</p>
+
+    <h2>10. Changes to These Terms</h2>
+    <p>We reserve the right to modify or revise these Terms at any time without notice. By continuing to access or use the Tools or our website after any such changes, you agree to be bound by the revised Terms. It is your responsibility to review these Terms periodically for any updates.</p>
+
+    <h2>11. Termination</h2>
+    <p>We may terminate or suspend your access to all or any part of the Tools or our website at any time, with or without cause or notice, which may result in the forfeiture and destruction of all information associated with your use. All provisions of these Terms which by their nature should survive termination shall survive termination, including, without limitation, intellectual property rights, disclaimers of warranties, limitations of liability, and indemnification.</p>
+
+    <h2>12. Entire Agreement</h2>
+    <p>These Terms, together with our Privacy Policy, constitute the entire agreement between you and [Your Name/Website Name] concerning your use of the Tools and our website and supersede all prior and contemporaneous communications and proposals, whether oral or written.</p>
+
+    <h2>13. Contact Us</h2>
+    <p>If you have any questions or concerns about these Terms, please feel free to contact us at:</p>
+    <p>[Your Email Address or Contact Information Here]</p>
+    <p>[Your Email Address or Contact Information Here]</p>
+
+<!-- ........................ END ............................ -->
+
+   <div class="social-share">
+    <h3>Share This Tool:</h3>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://kurtastarita.github.io/post40gains-fitness-tools/home.html"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Share on Facebook">
+                <img src="facebook.png" alt="Facebook">
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/intent/tweet?url=https://kurtastarita.github.io/post40gains-fitness-tools/home.html&text=Check out this Ultimate Meal Log to easily track your nutrition! #fitness #nutrition"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Share on Twitter">
+                <img src="twitter.png" alt="Twitter">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://kurtastarita.github.io/post40gains-fitness-tools/home.html&title=Ultimate%20Meal%20Log&summary=Effortlessly%20log%20your%20daily%20meals%2C%20track%20calories%2C%20and%20monitor%20your%20nutrition!&source=YOUR_WEBSITE_NAME"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Share on LinkedIn">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+        </li>
+    </ul>
+</div>
+
+</main>
+  
+  <button id="back-to-top-btn" title="Go to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M11.47 3.72a.75.75 0 011.06 0l5.25 5.25a.75.75 0 11-1.06 1.06L12 5.31l-4.72 4.72a.75.75 0 11-1.06-1.06l5.25-5.25zM12 10.5a.75.75 0 01.75.75v8.25a.75.75 0 01-1.5 0V11.25A.75.75 0 0112 10.5z" clip-rule="evenodd" />
+    </svg>
+    <span class="sr-only">Back to top</span>
+</button>
+  
+    <footer>
+        <p>&copy; [2025] Kurt Astarita | <a href="disclaimers.html">Disclaimers</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
