@@ -1,7 +1,30 @@
-main img.profile-image {
-    float: right; /* Align the image to the right */
-    margin-left: 20px; /* Add left padding/spacing between text and image */
-    margin-bottom: 20px; /* Add bottom padding/spacing between text and image */
+main figure {
+    float: right; /* Keep the figure (image and caption) floated right */
+    margin-left: 20px;
+    margin-bottom: 20px;
+    max-width: 300px; /* Adjust the maximum width of the figure as needed */
+}
+
+main figure img.profile-image {
+    display: block; /* Prevent extra space below inline images */
+    width: 100%; /* Make the image scale within the figure's width */
+    height: auto;
+    margin-bottom: 5px; /* Add a little space between the image and caption */
+}
+
+main figure figcaption {
+    font-size: 0.9em; /* Slightly smaller font size for the caption */
+    color: #777; /* Light gray color for the caption text */
+    text-align: center; /* Center the caption text below the image */
+}
+
+main figure figcaption a {
+    color: #007bff; /* Link color for the caption link */
+    text-decoration: underline; /* Underline the link */
+}
+
+main figure figcaption a:hover {
+    color: #0056b3; /* Darker link color on hover */
 }
 
 header {
