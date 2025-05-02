@@ -1,3 +1,9 @@
+main img.profile-image {
+    float: right; /* Align the image to the right */
+    margin-left: 20px; /* Add left padding/spacing between text and image */
+    margin-bottom: 20px; /* Add bottom padding/spacing between text and image */
+}
+
 header {
     background-color: #f8f8f8; /* Light gray background */
     text-align: center; /* Center the content within the header */
