@@ -253,7 +253,7 @@ body {
 
 /* Specific heights for each iframe container */
 .iframe-container iframe[src*="kurtastarita.github.io/Calorie-Calculator-TDEE/"] {
-  height: 1050px; /* Adjust as needed for Calorie Calculator */
+  height: 1120px; /* Adjust as needed for Calorie Calculator */
   margin-bottom: 10px;
 }
 
