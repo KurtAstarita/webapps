@@ -741,3 +741,7 @@ body {
 .button:hover {
     background-color: #0056b3;
 }
+
+#center {
+    text-align: center; /* This will center the text within the h2, h3, h4, etc, element */
+}
