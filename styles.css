@@ -590,6 +590,7 @@ body {
 
 .tool-item img {
     max-width: 100%; /* Ensures images don't overflow */
+    width: 300px; /* Transferred from inline style */
     height: auto;
     display: block; /* Removes extra space below image */
     margin-bottom: 10px; /* Space between image and text */
@@ -627,7 +628,7 @@ body {
     max-width: 800px; /* Max width for readability */
     margin: 40px auto; /* Center the section with vertical spacing */
     padding: 20px;
-    line-height: 1.6;
+    line-height: 1.6; /* Transferred from inline style */
     color: #333;
 }
 
