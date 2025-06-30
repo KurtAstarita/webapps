@@ -1,3 +1,12 @@
+.centered-image {
+    display: block; /* Images are inline by default; make it block to apply margin: auto */
+    margin-left: auto; /* Centers the image horizontally */
+    margin-right: auto; /* Centers the image horizontally */
+    /* Optional: Add some top/bottom margin if you want space around it */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 main img.home-page-image {
     display: block; /* Prevent any potential extra spacing below the image */
     margin-bottom: 20px; /* Add some space between the image and the following text */
