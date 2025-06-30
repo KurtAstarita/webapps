@@ -272,7 +272,7 @@ body {
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Protein-Calculator/"] {
-  height: 825px; /* Adjust as needed for Protein Calculator */
+  height: 900px; /* Adjust as needed for Protein Calculator */
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/One-Rep-Max-Calculator/"] {
