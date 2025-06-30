@@ -209,110 +209,142 @@ body {
 
 /* New Wrapper for the entire form including "Powered by" */
 .followit-white-box-wrapper {
-  background-color: rgb(255, 255, 255); /* White background */
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(204, 204, 204); /* Light grey border */
-  border-radius: 6px; /* Rounded corners */
-  box-shadow: 0 5px 25px rgba(34, 60, 47, 0.25); /* Subtle shadow */
-  padding: clamp(17px, 5%, 40px) clamp(17px, 7%, 50px); /* Padding inside the box */
-  margin-top: 10px; /* Adjust top margin as needed for spacing in your sidebar */
-  max-width: none; /* Ensure it takes available width */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  display: flex; /* Use flexbox to easily stack content inside */
-  flex-direction: column; /* Stack items vertically */
+    background-color: rgb(255, 255, 255); /* White background */
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204); /* Light grey border */
+    border-radius: 6px; /* Rounded corners */
+    box-shadow: 0 5px 25px rgba(34, 60, 47, 0.25); /* Subtle shadow */
+    padding: clamp(17px, 5%, 40px) clamp(17px, 7%, 50px); /* Padding inside the box */
+    margin-top: 10px; /* Adjust top margin as needed for spacing in your sidebar */
+    max-width: none; /* Ensure it takes available width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex; /* Use flexbox to easily stack content inside */
+    flex-direction: column; /* Stack items vertically */
 }
 
 /* --- Adjustments to the existing Follow.it CSS for .form-preview --- */
 /* This section removes the inner styling you don't want */
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  margin-top: 0 !important; /* Set to 0 to prevent extra space */
-  padding: 0 !important; /* Remove padding as the wrapper now handles it */
-  max-width: none !important;
-  border-radius: 0 !important; /* Remove inner border-radius */
-  box-shadow: none !important; /* Remove inner box-shadow */
-  background-color: transparent !important; /* Make background transparent */
-  border: none !important; /* Remove inner border */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    margin-top: 0 !important; /* Set to 0 to prevent extra space */
+    padding: 0 !important; /* Remove padding as the wrapper now handles it */
+    max-width: none !important;
+    border-radius: 0 !important; /* Remove inner border-radius */
+    box-shadow: none !important; /* Remove inner box-shadow */
+    background-color: transparent !important; /* Make background transparent */
+    border: none !important; /* Remove inner border */
+
+    /* Inline styles moved from .form-preview div */
+    /* position: relative; - This was on the div with style="position: relative;" */
+    /* The border-style, border-width, border-color, background-color are handled by the wrapper */
 }
 
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview,
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview *{
-  box-sizing: border-box !important;
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview * {
+    box-sizing: border-box !important;
 }
+
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading {
-  width: 100% !important;
+    width: 100% !important;
 }
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5{
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+
+    /* Inline styles moved from h5 */
+    font-family: Arial !important; /* from h5 */
+    font-weight: bold !important; /* from h5 */
+    color: rgb(0, 0, 0) !important; /* from h5 */
+    font-size: 16px !important; /* from h5 */
+    text-align: center !important; /* from h5 */
+    text-transform: none !important; /* from h5 */
 }
+
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field {
-  margin-top: 20px !important;
-  width: 100% !important;
+    margin-top: 20px !important;
+    width: 100% !important;
 }
+
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
-  width: 100% !important;
-  height: 40px !important;
-  border-radius: 6px !important;
-  border: 2px solid #e9e8e8 !important;
-  background-color: #fff;
-  outline: none !important;
+    width: 100% !important;
+    height: 40px !important;
+    border-radius: 6px !important;
+    border: 2px solid #e9e8e8 !important;
+    background-color: #fff;
+    outline: none !important;
+
+    /* Inline styles moved from input */
+    font-family: Arial !important; /* from input */
+    font-weight: normal !important; /* from input */
+    color: rgb(0, 0, 0) !important; /* from input */
+    font-size: 14px !important; /* from input */
+    text-align: center !important; /* from input */
+    background-color: rgb(255, 255, 255) !important; /* from input */
+    text-transform: none !important; /* from input */
 }
-.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
-  color: #000000 !important;
-  font-family: "Montserrat" !important;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-}
+
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::placeholder {
-  color: #000000 !important;
-  opacity: 1 !important;
+    color: #000000 !important;
+    opacity: 1 !important;
 }
 
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:-ms-input-placeholder {
-  color: #000000 !important;
+    color: #000000 !important;
 }
 
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::-ms-input-placeholder {
-  color: #000000 !important;
+    color: #000000 !important;
 }
+
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button {
-  margin-top: 10px !important;
-  width: 100% !important;
+    margin-top: 10px !important;
+    width: 100% !important;
 }
+
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button {
-  width: 100% !important;
-  height: 40px !important;
-  border: 0 !important;
-  border-radius: 6px !important;
-  line-height: 0px !important;
+    width: 100% !important;
+    height: 40px !important;
+    border: 0 !important;
+    border-radius: 6px !important;
+    line-height: 0px !important;
+
+    /* Inline styles moved from button */
+    font-family: Arial !important; /* from button */
+    font-weight: bold !important; /* from button */
+    color: rgb(255, 255, 255) !important; /* from button */
+    font-size: 16px !important; /* from button */
+    text-align: center !important; /* from button */
+    background-color: rgb(0, 0, 0) !important; /* from button */
+    text-transform: none !important; /* from button */
 }
+
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button:hover {
-  cursor: pointer !important;
+    cursor: pointer !important;
 }
+
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line {
-  color: #231f20 !important;
-  font-family: "Montserrat" !important;
-  font-size: 13px !important;
-  font-weight: 400 !important;
-  line-height: 25px !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  display: flex !important;
-  width: 100% !important;
-  justify-content: center !important;
-  align-items: center !important;
-  margin-top: 10px !important; /* Keep this to separate from the form above it */
+    color: #231f20 !important;
+    font-family: "Montserrat" !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    line-height: 25px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 10px !important; /* Keep this to separate from the form above it */
 }
+
 .followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line img {
-  margin-left: 10px !important;
-  height: 1.13em !important;
-  max-height: 1.13em !important;
+    margin-left: 10px !important;
+    height: 1.13em !important;
+    max-height: 1.13em !important;
 }
 
 
