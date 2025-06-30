@@ -750,40 +750,31 @@ body {
     color: #333;
 }
 
-.info-section h2 {
-    color: #111; /* Matching your button color or a prominent color */
-    margin-top: 30px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
 .info-section ul {
-    list-style: disc outside; /* CHANGED: was 'disc inside' */
-    padding-left: 20px; /* ADDED: Space for the bullet itself */
-    margin-top: 30px; /* MODIFIED: was 'margin-left: 20px' and 'margin-bottom: 20px' */
-    margin-bottom: 20px; /* Kept existing value, consider increasing for more space */
+    list-style: disc outside; /* Keep the bullet outside the content */
+    padding-left: 20px; /* Space for the bullet itself */
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.info-section ul li { /* MODIFIED: Target specific ul li */
-    display: flex; /* ADDED: Make the list item a flex container */
-    align-items: flex-start; /* ADDED: Align items to the top (important for multi-line text) */
-    margin-bottom: 25px; /* MODIFIED: was '10px', increased for more space between items */
+.info-section ul li {
+    display: flex; /* Make the list item a flex container */
+    align-items: flex-start; /* Align the content to the top of the bullet */
+    margin-bottom: 25px; /* Space between each full benefit block */
+    flex-direction: column; /* This is the key change: stack h3 and p vertically inside li */
 }
 
-.info-section ul li h3 { /* NEW RULE: Styles for h3 inside list items */
-    display: inline; /* Make h3 behave like inline text */
-    margin-top: 0; /* Remove default top margin from h3 */
-    margin-bottom: 0; /* Remove default bottom margin from h3 */
-    padding-left: 5px; /* Small space between bullet and h3 text */
+.info-section ul li h3 {
+    display: block; /* Ensure h3 behaves as a block element */
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0; /* Remove this padding as it's now handled by the LI's overall padding */
+    text-indent: -1.2em; /* Pull the h3 text back to align with the bullet */
+    margin-left: 1.2em; /* Push the h3 text into place, creating space for the bullet */
 }
 
-.info-section ul li p { /* NEW RULE: Styles for paragraph inside list items */
-    margin-top: 5px; /* Add a small space between the h3 and the paragraph */
-    margin-bottom: 0; /* Remove default bottom margin from paragraph */
-    padding-left: 5px; /* Align paragraph content with the h3 */
-}
-
-.info-section a {
-    color: #007bff;
-    text-decoration: underline;
+.info-section ul li p {
+    margin-top: 5px; /* Small space between h3 and paragraph */
+    margin-bottom: 0;
+    padding-left: 1.2em; /* Align the paragraph directly under the h3 text */
 }
