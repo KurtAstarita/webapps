@@ -205,42 +205,117 @@ body {
     background-color: #0056b3;
 }
 
-/* --------------------------- Gumroad Follow Form Styles -------------------------------------- */
+/* --------------------------------------- Follow.it Styles ------------------------------------------------------ */
 
-
-#gumroad-follow-form-embed {
-    margin: 1em 0; /* Add some top and bottom margin */
-    padding: 1em;
-    display: flex; /* Use flexbox for alignment */
-    gap: 0.5rem; /* Space between input and button */
-    align-items: center; /* Vertically align items */
-    border: 1px solid #ccc; /* Optional: Add a subtle border */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    background-color: #fff; /* Optional: Light background */
+/* New Wrapper for the entire form including "Powered by" */
+.followit-white-box-wrapper {
+  background-color: rgb(255, 255, 255); /* White background */
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204); /* Light grey border */
+  border-radius: 6px; /* Rounded corners */
+  box-shadow: 0 5px 25px rgba(34, 60, 47, 0.25); /* Subtle shadow */
+  padding: clamp(17px, 5%, 40px) clamp(17px, 7%, 50px); /* Padding inside the box */
+  margin-top: 10px; /* Adjust top margin as needed for spacing in your sidebar */
+  max-width: none; /* Ensure it takes available width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  display: flex; /* Use flexbox to easily stack content inside */
+  flex-direction: column; /* Stack items vertically */
 }
 
-#gumroad-follow-form-embed-input {
-    flex-grow: 1; /* Make the input take up available space */
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #111;
-    border-radius: 3px;
+/* --- Adjustments to the existing Follow.it CSS for .form-preview --- */
+/* This section removes the inner styling you don't want */
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  margin-top: 0 !important; /* Set to 0 to prevent extra space */
+  padding: 0 !important; /* Remove padding as the wrapper now handles it */
+  max-width: none !important;
+  border-radius: 0 !important; /* Remove inner border-radius */
+  box-shadow: none !important; /* Remove inner box-shadow */
+  background-color: transparent !important; /* Make background transparent */
+  border: none !important; /* Remove inner border */
 }
 
-#gumroad-follow-form-embed-button {
-    background-color: #007bff; /* A common primary color */
-    color: white;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview,
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview *{
+  box-sizing: border-box !important;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading {
+  width: 100% !important;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-heading h5{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field {
+  margin-top: 20px !important;
+  width: 100% !important;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
+  width: 100% !important;
+  height: 40px !important;
+  border-radius: 6px !important;
+  border: 2px solid #e9e8e8 !important;
+  background-color: #fff;
+  outline: none !important;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input {
+  color: #000000 !important;
+  font-family: "Montserrat" !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::placeholder {
+  color: #000000 !important;
+  opacity: 1 !important;
 }
 
-#gumroad-follow-form-embed-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input:-ms-input-placeholder {
+  color: #000000 !important;
 }
+
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-input-field input::-ms-input-placeholder {
+  color: #000000 !important;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button {
+  margin-top: 10px !important;
+  width: 100% !important;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button {
+  width: 100% !important;
+  height: 40px !important;
+  border: 0 !important;
+  border-radius: 6px !important;
+  line-height: 0px !important;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .form-preview .preview-submit-button button:hover {
+  cursor: pointer !important;
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line {
+  color: #231f20 !important;
+  font-family: "Montserrat" !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 25px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: flex !important;
+  width: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 10px !important; /* Keep this to separate from the form above it */
+}
+.followit--follow-form-container[attr-a][attr-b][attr-c][attr-d][attr-e][attr-f] .powered-by-line img {
+  margin-left: 10px !important;
+  height: 1.13em !important;
+  max-height: 1.13em !important;
+}
+
+
 
 /* ------------------------------------- Iframe Styles ------------------------------------------ */
 
