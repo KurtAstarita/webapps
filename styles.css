@@ -389,7 +389,7 @@ body {
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Advanced-BMI-Calculator/"] {
-  height: 900px; /* Adjust as needed for BMI Calculator */
+  height: 1050px; /* Adjust as needed for BMI Calculator */
 }
 
 .iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Workout-Generator/"] {
