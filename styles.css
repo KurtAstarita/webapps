@@ -708,7 +708,7 @@ body {
 
 .tool-item img {
     max-width: 100%; /* Ensures images don't overflow */
-    width: 300px; /* Transferred from inline style */
+    width: auto; /* Allow image to scale automatically */
     height: auto;
     display: block; /* Removes extra space below image */
     margin-bottom: 10px; /* Space between image and text */
@@ -744,4 +744,23 @@ body {
 
 #center {
     text-align: center; /* This will center the text within the h2, h3, h4, etc, element */
+}
+
+/* Media Query for smaller screens (e.g., typical mobile devices) */
+@media (max-width: 768px) {
+    .tools-grid {
+        grid-template-columns: 1fr; /* Force a single column for screens up to 768px wide */
+        padding: 10px; /* Slightly less padding on smaller screens */
+    }
+
+    .tool-item {
+        padding: 10px; /* Slightly less padding for individual items */
+    }
+}
+
+/* You might want an intermediate breakpoint too, for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .tools-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablet sizes */
+    }
 }
