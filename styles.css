@@ -370,45 +370,45 @@ body {
 }
 
 /* Specific heights for each iframe container */
-.iframe-container iframe[src*="kurtastarita.github.io/calorie-calculator-tdee/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/Calorie-Calculator-TDEE/"] {
   height: 1120px; /* Adjust as needed for Calorie Calculator */
   margin-bottom: 10px;
 }
 
-.iframe-container iframe[src*="kurtastarita.github.io/macro-calculator/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/Macro-Calculator/"] {
   height: 750px; /* Adjust as needed for Macro Calculator */
       margin-bottom: 10px;
 }
 
-.iframe-container iframe[src*="kurtastarita.github.io/protein-calculator/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/Protein-Calculator/"] {
   height: 900px; /* Adjust as needed for Protein Calculator */
 }
 
-.iframe-container iframe[src*="kurtastarita.github.io/one-rep-max-calculator/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/One-Rep-Max-Calculator/"] {
   height: 700px; /* Adjust as needed for 1-Rep Max Calculator */
 }
 
-.iframe-container iframe[src*="kurtastarita.github.io/advanced-bmi-calculator/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/Advanced-BMI-Calculator/"] {
   height: 1200px; /* Adjust as needed for BMI Calculator */
 }
 
-.iframe-container iframe[src*="kurtastarita.github.io/ultimate-workout-generator/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Workout-Generator/"] {
   height: 35500px; /* Adjust as needed for Workout Generator */
 }
 
-.iframe-container iframe[src*="kurtastarita.github.io/ultimate-meal-log/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Meal-Log/"] {
   height: 1200px; /* Adjust as needed for Meal Log */
 }
 
-.iframe-container iframe[src*="kurtastarita.github.io/ultimate-shopping-log/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Shopping-Log/"] {
   height: 1200px; /* Adjust as needed for Shopping Log */
 }
 
-.iframe-container iframe[src*="kurtastarita.github.io/ultimate-workout-log/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/Ultimate-Workout-Log/"] {
   height: 1500px; /* Adjust as needed for Workout Log */
 }
 
-.iframe-container iframe[src*="kurtastarita.github.io/advanced-body-fat-percentage-calculator/"] {
+.iframe-container iframe[src*="kurtastarita.github.io/Advanced-Body-Fat-Percentage-Calculator/"] {
   height: 1250px; /* Adjust as needed for Body Fat Calculator */
 }
 
@@ -449,60 +449,60 @@ body {
   }
 
   /* Styles for Advanced Body-Fat Calculator on small screens */
-  iframe[src*="kurtastarita.github.io/advanced-body-fat-percentage-calculator/"] #body-fat-calculator-container .input-group {
+  iframe[src*="kurtastarita.github.io/Advanced-Body-Fat-Percentage-Calculator/"] #body-fat-calculator-container .input-group {
     display: block; /* Example: Make input groups stack */
     margin-bottom: 10px;
   }
 
-  iframe[src*="kurtastarita.github.io/advanced-body-fat-percentage-calculator/"] #calculate-button {
+  iframe[src*="kurtastarita.github.io/Advanced-Body-Fat-Percentage-Calculator/"] #calculate-button {
     width: 100%; /* Example: Make button full width */
   }
 
   /* Styles for Ultimate Workout Generator on small screens */
-  iframe[src*="kurtastarita.github.io/ultimate-workout-generator/"] .form-control {
+  iframe[src*="kurtastarita.github.io/Ultimate-Workout-Generator/"] .form-control {
     width: 100%; /* Example: Make form controls full width */
     margin-bottom: 8px;
   }
 
   /* Styles for Ultimate Workout Log on small screens */
-  iframe[src*="kurtastarita.github.io/ultimate-workout-log/"] .exercise-row {
+  iframe[src*="kurtastarita.github.io/Ultimate-Workout-Log/"] .exercise-row {
     display: block; /* Example: Stack workout log rows */
   }
 
-  iframe[src*="kurtastarita.github.io/ultimate-workout-log/"] .exercise-input {
+  iframe[src*="kurtastarita.github.io/Ultimate-Workout-Log/"] .exercise-input {
     width: 100%; /* Example: Make exercise inputs full width */
     margin-bottom: 5px;
   }
 
   /* Styles for Ultimate Shopping Log on small screens */
-  iframe[src*="kurtastarita.github.io/ultimate-shopping-log/"] .item {
+  iframe[src*="kurtastarita.github.io/Ultimate-Shopping-Log/"] .item {
     display: block; /* Example: Stack shopping list items */
   }
 
-  iframe[src*="kurtastarita.github.io/ultimate-shopping-log/"] .item-name {
+  iframe[src*="kurtastarita.github.io/Ultimate-Shopping-Log/"] .item-name {
     width: 100%; /* Example: Make item names full width */
   }
 
   /* Styles for Calorie Calculator (TDEE) on small screens */
-  iframe[src*="kurtastarita.github.io/calorie-calculator-tdee/"] .input-field {
+  iframe[src*="kurtastarita.github.io/Calorie-Calculator-TDEE/"] .input-field {
     width: 100%; /* Example */
     margin-bottom: 10px;
   }
 
   /* Styles for MACRO Calculator on small screens */
-  iframe[src*="kurtastarita.github.io/macro-calculator/"] .macro-input {
+  iframe[src*="kurtastarita.github.io/Macro-Calculator/"] .macro-input {
     width: 100%; /* Example */
     margin-bottom: 10px;
   }
 
   /* Styles for 1-Rep Max Calculator on small screens */
-  iframe[src*="kurtastarita.github.io/one-rep-max-calculator/"] .rm-input {
+  iframe[src*="kurtastarita.github.io/One-Rep-Max-Calculator/"] .rm-input {
     width: 100%; /* Example */
     margin-bottom: 10px;
   }
 
   /* Styles for Protein Calculator on small screens */
-  iframe[src*="kurtastarita.github.io/protein-calculator/"] .protein-input {
+  iframe[src*="kurtastarita.github.io/Protein-Calculator/"] .protein-input {
     width: 100%; /* Example */
     margin-bottom: 10px;
   }
