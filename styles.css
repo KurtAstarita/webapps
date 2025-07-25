@@ -416,6 +416,10 @@ body {
   height: 2800px; /* Adjust as needed for Body Fat Calculator */
 }
 
+.iframe-container iframe[src*="kurtastarita.github.io/fitness-course/"] {
+  height: 1000px; /* 
+}
+
 .iframe-container iframe[src*="https://us9.list-manage.com/contact-form?u=7296814d35dc763b0f265f514&form_id=33f77d77be23557fbd5b0d35b9b83878"] {
   height: 1000px; /* Adjust as needed for Body Fat Calculator */
 }
@@ -507,7 +511,20 @@ body {
     margin-bottom: 10px;
   }
 
-  /* Add styles for any other embedded tools here */
+   /* Styles for Ultimate Meal Log on small screens */
+  iframe[src*="kurtastarita.github.io/fitness-course/"] #meal-log .meal-entry {
+    display: block;
+  }
+
+  iframe[src*="kurtastarita.github.io/fitness-course/"] #meal-log .meal-entry input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  iframe[src*="kurtastarita.github.io/fitness-course/"] #meal-log .header {
+    display: none;
+  }
+    
 }
 
 /* ---------------- Contact Form Styling ------------------------- */
